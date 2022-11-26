@@ -1,0 +1,28 @@
+$primary: #345;
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+@each $title, $value in $colors {
+  .btn-#{$title} {
+    background-color: $value;
+  }
+  .bg-#{$title} {
+    background-color: $value;
+  }
+}
+@each $title, $value in $grays {
+  .gray-#{$title} {
+    color: $value;
+  }
+  .border-#{$title} {
+    border-color: $value;
+  }
+}
+@each $title, $value in $yellows {
+  .#{$title} {
+    color: $value;
+  }
+}
